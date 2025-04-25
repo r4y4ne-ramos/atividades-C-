@@ -1,0 +1,30 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+  GDB online is an online compiler and debugger tool for C, C++, Python, PHP, Ruby, 
+  C#, OCaml, VB, Perl, Swift, Prolog, Javascript, Pascal, COBOL, HTML, CSS, JS
+  Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main()
+{
+    string usuario, senha;
+    bool acessoPermitido;
+    
+    cout << "Digite seu nome de usuario:" ;
+    cin >>  usuario;
+    
+    cout << "Digite sua senha: ";
+    cin >> senha;
+    
+    acessoPermitido = (usuario == "Rayane" && senha == "123");
+    
+    cout << "Acesso permitido: " <<(acessoPermitido ? "verdadeiro" : "falso") <<endl;
+    
+
+    return 0;
+}
